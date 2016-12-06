@@ -12,13 +12,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var myTableView: UITableView!
     
-    private let names = ["Mark", "Ted", "Jack", "Will", "Grace", "Lucy", "Jason", "Aaron", "Matt", "Justin", "Mike", "Bill"]
+    private let names = ["Mark", "Ted", "Jack", "Will", "Grace", "Lucy", "Jason", "Aaron", "Matt", "Justin", "Mike", "Bill", "Jack", "Jerry", "Peter", "Tom", "Lily", "John", "Ben", "Ricky", "Oliver", "Wendy", "Nick", "Vivan", "Zack", "Karen", "Gary", "Don"]
     private let cellID : String = "NAMECELL"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Regist Cell
-        myTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        myTableView.register(ItemCell.self, forCellReuseIdentifier: cellID)
+        //let headerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
+        //headerView.backgroundColor = UIColor.blue
+        //myTableView.tableHeaderView = headerView
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,9 +34,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return names.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        cell.textLabel?.text = names[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ItemCell
+        cell.name = names[indexPath.row]
         return cell
+    }
+    
+    //MARK: TableViewDelegate
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
+        headerView.backgroundColor = UIColor.blue
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
 }
 
