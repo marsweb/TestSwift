@@ -11,7 +11,7 @@ import UIKit
 class ChangeNameController: UIViewController {
     
     var newName: String = ""
-    var delegate: ViewController?
+    weak var delegate: ViewController?
 
     @IBOutlet weak var nameText: UITextField!
     
