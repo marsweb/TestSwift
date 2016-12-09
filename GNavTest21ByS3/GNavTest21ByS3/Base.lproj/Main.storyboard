@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6db-gj-7CF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Wvc-yi-BPh">
+            <objects>
+                <navigationController id="6db-gj-7CF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Kd-hb-qF2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QHq-ym-lEy" kind="relationship" relationship="rootViewController" id="N22-rl-lwL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="McD-Vj-s6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="119"/>
+        </scene>
+        <!--Name List-->
+        <scene sceneID="YeX-nv-FN7">
+            <objects>
+                <viewController id="QHq-ym-lEy" customClass="ViewController" customModule="GNavTest21ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E98-xt-9i5"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9h-7X-UTy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ghR-Lm-GCS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-ge-0lf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QHq-ym-lEy" id="EqR-Oq-uW2"/>
+                                    <outlet property="delegate" destination="QHq-ym-lEy" id="n1d-2g-XqW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Name List" id="I5W-c1-CBe"/>
+                    <connections>
+                        <outlet property="myTableView" destination="jYe-ge-0lf" id="6k5-0T-wM5"/>
+                        <segue destination="qf2-DP-BGY" kind="push" identifier="NameSeg" id="AcO-96-fWb"/>
+                        <segue destination="0qM-Hk-gTx" kind="push" identifier="HeaderSeg" id="79L-VX-iYQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgh-86-4D5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="116.49175412293854"/>
+        </scene>
+        <!--Chosen Name-->
+        <scene sceneID="N40-mt-0Y5">
+            <objects>
+                <viewController id="qf2-DP-BGY" customClass="NameViewController" customModule="GNavTest21ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vEa-9A-8AE"/>
+                        <viewControllerLayoutGuide type="bottom" id="mgD-Bu-Dtc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2me-ya-WCQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-US-2IG">
+                                <rect key="frame" x="55" y="333.5" width="264" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="A6b-mp-hpo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HGV-US-2IG" firstAttribute="centerY" secondItem="2me-ya-WCQ" secondAttribute="centerY" id="bgB-xn-owJ"/>
+                            <constraint firstItem="HGV-US-2IG" firstAttribute="centerX" secondItem="2me-ya-WCQ" secondAttribute="centerX" id="thE-7L-WK7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chosen Name" id="9sJ-Ze-2iS"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="HGV-US-2IG" id="K4r-iY-4pj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCY-H7-SFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8" y="-172.26386806596702"/>
+        </scene>
+        <!--Header-->
+        <scene sceneID="NBX-05-Fuz">
+            <objects>
+                <viewController id="0qM-Hk-gTx" customClass="HeaderViewController" customModule="GNavTest21ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nvS-RW-xtG"/>
+                        <viewControllerLayoutGuide type="bottom" id="doI-o6-fh3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UiV-LE-UiY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxo-3g-IT3">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.231372565" green="0.63529413940000001" blue="0.53725492949999998" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="i9k-DM-Lxh"/>
+                                    <constraint firstAttribute="width" constant="240" id="lzX-RT-TLd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lxo-3g-IT3" firstAttribute="centerY" secondItem="UiV-LE-UiY" secondAttribute="centerY" id="XN3-NJ-u4S"/>
+                            <constraint firstItem="Lxo-3g-IT3" firstAttribute="centerX" secondItem="UiV-LE-UiY" secondAttribute="centerX" id="zbA-R6-Igb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Header" id="gFr-x3-b0w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2X0-hN-fbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="495"/>
+        </scene>
+    </scenes>
+</document>
