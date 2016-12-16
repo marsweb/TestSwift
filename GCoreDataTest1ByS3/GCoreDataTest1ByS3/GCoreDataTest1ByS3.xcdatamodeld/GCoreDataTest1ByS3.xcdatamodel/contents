@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Names" representedClassName="Names" syncable="YES" codeGenerationType="class">
+        <attribute name="nName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nNo" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Names" positionX="-63" positionY="-18" width="128" height="73"/>
+    </elements>
+</model>
