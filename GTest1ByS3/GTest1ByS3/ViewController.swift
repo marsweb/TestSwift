@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         students = DataUtil.getAllStudent()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addStu))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addStu))
     }
     
     override func viewWillAppear(_ animated: Bool) {

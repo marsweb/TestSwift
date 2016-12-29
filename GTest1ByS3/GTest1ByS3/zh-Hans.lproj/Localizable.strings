@@ -1,0 +1,36 @@
+/* add picture */
+"Add Picture" = "添加照片";
+
+/* change picture */
+"Change Picture" = "修改照片";
+
+/* failed */
+"Failed" = "操作失败";
+
+/* missing student's info */
+"Missing student's Info" = "缺少必须学生信息";
+
+/* modify student */
+"Modify Student" = "修改学生信息";
+
+/* new student */
+"New Student" = "添加学生信息";
+
+/* ok */
+"OK" = "好的";
+
+/* photo picker error */
+"Photo Picker Error" = "照片选取错误";
+
+/* save */
+"Save" = "保存";
+
+/* successed */
+"Successed" = "操作成功";
+
+/* unsupported media source */
+"Unsupported media source" = "不支持媒体类型";
+
+/* please check your info or connect admin */
+"please check your info or connect admin" = "请检查信息或联系管理员";
+
