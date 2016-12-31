@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GGCDTest2ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7R-Hk-6ee">
+                                <rect key="frame" x="145" y="37" width="84" height="30"/>
+                                <color key="backgroundColor" red="0.1057735006" green="0.69410585729999996" blue="0.61716550479999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="5ie-53-wC6"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99388147699999996" green="1" blue="0.98848505669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="letsStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POJ-Lh-xGf"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HkV-pb-Ul5">
+                                <rect key="frame" x="237" y="42" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-Pv-UPW">
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eC5-Pv-UPW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hl-1o-Oih"/>
+                            <constraint firstAttribute="trailing" secondItem="eC5-Pv-UPW" secondAttribute="trailing" id="7f8-bu-Fyy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eC5-Pv-UPW" secondAttribute="bottom" id="JU4-CY-WvL"/>
+                            <constraint firstItem="e7R-Hk-6ee" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Mng-20-iKR"/>
+                            <constraint firstItem="e7R-Hk-6ee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAm-1c-hAJ"/>
+                            <constraint firstItem="eC5-Pv-UPW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eXT-II-pTE"/>
+                            <constraint firstItem="eC5-Pv-UPW" firstAttribute="top" secondItem="e7R-Hk-6ee" secondAttribute="bottom" constant="18" id="fYl-a7-VKt"/>
+                            <constraint firstItem="HkV-pb-Ul5" firstAttribute="leading" secondItem="e7R-Hk-6ee" secondAttribute="trailing" constant="8" id="rAH-XR-iDf"/>
+                            <constraint firstItem="HkV-pb-Ul5" firstAttribute="centerY" secondItem="e7R-Hk-6ee" secondAttribute="centerY" id="t74-Fx-EjI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoArea" destination="eC5-Pv-UPW" id="DH0-or-cCV"/>
+                        <outlet property="spinner" destination="HkV-pb-Ul5" id="TcN-b5-fub"/>
+                        <outlet property="startBtn" destination="e7R-Hk-6ee" id="BYS-bN-Qga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
