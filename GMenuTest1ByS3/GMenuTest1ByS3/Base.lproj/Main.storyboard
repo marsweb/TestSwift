@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4nw-WY-uxh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9RA-6A-JWa">
+            <objects>
+                <navigationController storyboardIdentifier="MainNav" id="4nw-WY-uxh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WRJ-wp-k14">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Oa0-FI-JKy" kind="relationship" relationship="rootViewController" id="rn6-Gy-CIe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QB9-f6-ce7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="120"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rtu-7p-UTR">
+            <objects>
+                <viewController id="Oa0-FI-JKy" customClass="ViewController" customModule="GMenuTest1ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rqj-p7-Rpp"/>
+                        <viewControllerLayoutGuide type="bottom" id="EZb-J1-BOm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iqq-Ym-ji5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AAP-PY-D05"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9a-14-1Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="119"/>
+        </scene>
+        <!--left-->
+        <scene sceneID="yjV-JG-o6l">
+            <objects>
+                <viewController storyboardIdentifier="Left" title="left" id="yVP-8F-b9U" customClass="LeftVC" customModule="GMenuTest1ByS3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SmW-gK-byJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6AR-8d-tua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2oc-IP-LBO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYa-db-qNM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44887231840000003" green="0.8300449849" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTs-Ny-OkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
